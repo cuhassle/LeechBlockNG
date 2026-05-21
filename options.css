@@ -66,12 +66,15 @@ body {
 }
 
 .ui-widget fieldset, .ui-widget input, .ui-widget select, .ui-widget textarea {
-	background: #fff;
 	color: #000;
 	border: 1px #aaa solid;
 	border-radius:15px;
 	padding: 8px 10px;
 	margin: 10px 0px;
+}
+
+.ui-widget input, .ui-widget select {
+	background-color:white;
 }
 
 .ui-widget input:disabled, .ui-widget select:disabled, .ui-widget textarea:disabled {
@@ -140,21 +143,17 @@ body {
 }
 
 .ui-tabs .ui-state-hover {
-	background: #aaa;
+	background: #ddd;
 	border: none;
 	animation-name: tab-hover;
   	animation-duration: 0.2s;
 }
 
 .ui-tabs .ui-state-active {
-	background: #777;
+	background: #eee;
 	border: none;
 	animation-name: tab-select;
   	animation-duration: 0.2s;
-}
-
-.ui-tabs .ui-state-active a {
-	color: #eee;
 }
 
 
@@ -228,15 +227,15 @@ body {
 
 @keyframes tab-select {
   	from {background-color: #ccc;}
-  	to {background-color: #777;}
+  	to {background-color: #eee;}
 }
 
 @keyframes tab-hover {
   	from {background-color: #ccc;}
-  	to {background-color: #aaa;}
+  	to {background-color: #ddd;}
 }
 
 @keyframes tab-unhover {
-  	from {background-color: #aaa;}
+  	from {background-color: #ddd;}
   	to {background-color: #ccc;}
 }
