@@ -1,4 +1,4 @@
-/* LeechBlock Modern theme style */
+/* LeechBlock Dark theme style */
 
 body {
 	background: #111;
@@ -55,7 +55,6 @@ body {
 	color: #eee;
 	border: 1px #555 solid;
 	border-radius:15px;
-	padding: 8px 10px;
 }
 
 .ui-widget input:disabled, .ui-widget select:disabled, .ui-widget textarea:disabled {
