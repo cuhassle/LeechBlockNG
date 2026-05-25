@@ -65,12 +65,15 @@ body {
 	border: none;
 }
 
+.ui-widget fieldset {
+	margin: 10px 0px;
+}
+
 .ui-widget fieldset, .ui-widget input, .ui-widget select, .ui-widget textarea {
 	color: #000;
 	border: 1px #aaa solid;
 	border-radius:15px;
 	padding: 8px 10px;
-	margin: 10px 0px;
 }
 
 .ui-widget input, .ui-widget select {

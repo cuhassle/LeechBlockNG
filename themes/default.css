@@ -2,7 +2,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-/* The following should replicate the Dark theme style */
+/* LeechBlock Modern theme style */
 
 body {
 	background: #111;
@@ -22,13 +22,11 @@ body {
 .ui-button:focus {
 	background: #253;
 	color: #eee;
-	border: none;
 }
 
 .ui-button:hover {
 	background: #142;
 	color: #eee;
-	border: none;
 	animation-name: ui-button-hover;
  	animation-duration: 0.2s;
 }
@@ -36,9 +34,6 @@ body {
 .ui-widget button, input[type="file"]::file-selector-button{
 	background: #444;
 	color: #eee;
-	border: none;
-	padding:8px 12px;
-	border-radius:50px;
 	animation-name: widget-unhover;
  	animation-duration: 0.2s;
 }
@@ -65,7 +60,6 @@ body {
 	border: 1px #555 solid;
 	border-radius:15px;
 	padding: 8px 10px;
-	margin: 10px 0px;
 }
 
 .ui-widget input:disabled, .ui-widget select:disabled, .ui-widget textarea:disabled {
@@ -80,11 +74,7 @@ body {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: none;
-}
-
-.ui-widget th, td {
-	border: none;
+	border-bottom: 1px solid #555;
 }
 
 .ui-widget-header {
