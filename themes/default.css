@@ -1,16 +1,25 @@
 /* LeechBlock Default theme style */
 
+:root {
+	--primary-bg-color: var(--primary-bg-color);
+	--primary-text-color: #eee;
+	--ui-button-bg-color: #253;
+	--ui-button-bg-hover-color: #142;
+	--ui-widget-button-bg-color: #444;
+	--ui-widget-button-bg-hover-color: #333;
+}
+
 @media (prefers-color-scheme: dark) {
 /* LeechBlock Dark theme style */
 
 body {
-	background: #111;
-	color: #eee;
+	background: var(--primary-bg-color);
+	color: var(--primary-text-color);
 }
 
 .ui-button {
-	background: #253;
-	color: #eee;
+	background: var(--ui-button-bg-color);
+	color: var(--primary-text-color);
 	border: none;
 	border-radius: 50px;
 	padding:8px 15px;
@@ -19,20 +28,20 @@ body {
 }
 
 .ui-button:focus {
-	background: #253;
-	color: #eee;
+	background: var(--ui-button-bg-color);
+	color: var(--primary-text-color);
 }
 
 .ui-button:hover {
-	background: #142;
-	color: #eee;
+	background: var(--ui-widget-button-bg-color);
+	color: var(--primary-text-color);
 	animation-name: ui-button-hover;
  	animation-duration: 0.2s;
 }
 
 .ui-widget button, input[type="file"]::file-selector-button{
 	background: #444;
-	color: #eee;
+	color: var(--primary-text-color);
 	animation-name: widget-unhover;
  	animation-duration: 0.2s;
 }
@@ -55,7 +64,7 @@ body {
 
 .ui-widget fieldset, .ui-widget input, .ui-widget select, .ui-widget textarea {
 	background: #222;
-	color: #eee;
+	color: var(--primary-text-color);
 	border: 1px #555 solid;
 	border-radius:15px;
 }
@@ -77,13 +86,13 @@ body {
 
 .ui-widget-header {
 	background: #444;
-	color: #eee;
+	color: var(--primary-text-color);
 	border: none;
 }
 
 .ui-widget-content {
 	background: #222;
-	color: #eee;
+	color: var(--primary-text-color);
 	border: none;
 }
 
@@ -99,7 +108,7 @@ body {
 }
 
 .ui-tabs .ui-state-default a {
-	color: #eee;
+	color: var(--primary-text-color);
 }
 
 .ui-tabs .ui-state-hover {
@@ -117,23 +126,23 @@ body {
 }
 
 .ui-tabs .ui-state-active a {
-	color: #eee;
+	color: var(--primary-text-color);
 }
 
 #paneAbout {
-	color: #eee;
+	color: var(--primary-text-color);
 }
 
 /* Animations */
 
 @keyframes ui-button-hover {
-  	from {background-color: #253;}
-  	to {background-color: #142;}
+  	from {background-color: var(--ui-button-bg-color);}
+  	to {background-color: var(--ui-widget-button-bg-color);}
 }
 
 @keyframes ui-button-unhover {
-  	from {background-color: #142;}
-  	to {background-color: #253;}
+  	from {background-color: var(--ui-widget-button-bg-color);}
+  	to {background-color: var(--ui-button-bg-color);}
 }
 
 @keyframes widget-hover {

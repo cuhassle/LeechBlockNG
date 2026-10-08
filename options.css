@@ -1,5 +1,15 @@
 /* LeechBlock options style */
 
+:root {
+	--primary-bg-color: #fff;
+	--primary-text-color: #000;
+	--ui-button-bg-color: #34d46a;
+	--ui-button-bg-hover-color: #8cff6f;
+	--ui-widget-button-bg-color: #ccc;
+	--ui-widget-button-bg-hover-color: #ddd;
+}
+
+
 html {
 	overflow-y: scroll;
 }
@@ -22,37 +32,37 @@ body {
 	color: #000;
 	border: none;
 	border-radius: 50px;
-	padding:8px 15px;
+	padding: 8px 15px;
 	animation-name: ui-button-unhover;
- 	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 .ui-button:focus {
 	background: #34d46a;
-	border:none;
+	border: none;
 }
 
 .ui-button:hover {
 	background: #8cff6f;
-	border:none;
+	border: none;
 	animation-name: ui-button-hover;
- 	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 .ui-widget button {
 	background: #ccc;
 	color: #333;
 	border: none;
-	padding:8px 12px;
-	border-radius:50px;
+	padding: 8px 12px;
+	border-radius: 50px;
 	animation-name: widget-unhover;
- 	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 .ui-widget button:hover:enabled {
 	background: #ddd;
 	animation-name: widget-hover;
- 	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 .ui-widget button:active:enabled {
@@ -69,18 +79,24 @@ body {
 	margin: 10px 0px;
 }
 
-.ui-widget fieldset, .ui-widget input, .ui-widget select, .ui-widget textarea {
+.ui-widget fieldset,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea {
 	color: #000;
 	border: 1px #aaa solid;
-	border-radius:15px;
+	border-radius: 15px;
 	padding: 4px 8px;
 }
 
-.ui-widget input, .ui-widget select {
-	background-color:white;
+.ui-widget input,
+.ui-widget select {
+	background-color: white;
 }
 
-.ui-widget input:disabled, .ui-widget select:disabled, .ui-widget textarea:disabled {
+.ui-widget input:disabled,
+.ui-widget select:disabled,
+.ui-widget textarea:disabled {
 	background: #eee;
 	color: #666;
 	border: 1px solid #ccc;
@@ -100,15 +116,16 @@ body {
 }
 
 .ui-widget a {
-    color: #2ca089;
-    text-decoration: none;
+	color: #2ca089;
+	text-decoration: none;
 }
 
 .ui-widget a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
-.ui-widget th, .ui-widget td {
+.ui-widget th,
+.ui-widget td {
 	text-align: center;
 	padding: 4px 12px;
 	border: none;
@@ -149,14 +166,14 @@ body {
 	background: #ddd;
 	border: none;
 	animation-name: tab-hover;
-  	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 .ui-tabs .ui-state-active {
 	background: #eee;
 	border: none;
 	animation-name: tab-select;
-  	animation-duration: 0.2s;
+	animation-duration: 0.2s;
 }
 
 
@@ -170,7 +187,7 @@ body {
 }
 
 #form {
-  text-align: center;
+	text-align: center;
 }
 
 #tabs {
@@ -209,36 +226,71 @@ body {
 }
 
 @keyframes ui-button-hover {
-  	from {background-color: #34d46a;}
-  	to {background-color: #8cff6f;}
+	from {
+		background-color: #34d46a;
+	}
+
+	to {
+		background-color: #8cff6f;
+	}
 }
 
 @keyframes ui-button-unhover {
-  	from {background-color: #8cff6f;}
-  	to {background-color: #34d46a;}
+	from {
+		background-color: #8cff6f;
+	}
+
+	to {
+		background-color: #34d46a;
+	}
 }
 
 @keyframes widget-hover {
-	from {background-color: #ccc;}
-	to {background-color: #ddd;}
+	from {
+		background-color: #ccc;
+	}
+
+	to {
+		background-color: #ddd;
+	}
 }
 
 @keyframes widget-unhover {
-	from {background-color: #ddd;}
-	to {background-color: #ccc;}
+	from {
+		background-color: #ddd;
+	}
+
+	to {
+		background-color: #ccc;
+	}
 }
 
 @keyframes tab-select {
-  	from {background-color: #ccc;}
-  	to {background-color: #eee;}
+	from {
+		background-color: #ccc;
+	}
+
+	to {
+		background-color: #eee;
+	}
 }
 
 @keyframes tab-hover {
-  	from {background-color: #ccc;}
-  	to {background-color: #ddd;}
+	from {
+		background-color: #ccc;
+	}
+
+	to {
+		background-color: #ddd;
+	}
 }
 
 @keyframes tab-unhover {
-  	from {background-color: #ddd;}
-  	to {background-color: #ccc;}
+	from {
+		background-color: #ddd;
+	}
+
+	to {
+		background-color: #ccc;
+	}
 }

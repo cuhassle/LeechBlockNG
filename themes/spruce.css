@@ -110,3 +110,13 @@ body {
 #paneAbout {
 	color: #9ca;
 }
+
+@keyframes tab-hover {
+  	from {background-color: #333;}
+  	to {background-color: #777;}
+}
+
+@keyframes tab-unhover {
+  	from {background-color: #777;}
+  	to {background-color: #333;}
+}
