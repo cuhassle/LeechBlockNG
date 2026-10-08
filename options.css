@@ -7,6 +7,9 @@
 	--ui-button-bg-hover-color: #8cff6f;
 	--ui-widget-button-bg-color: #ccc;
 	--ui-widget-button-bg-hover-color: #ddd;
+	--ui-tabs-bg-color: #ccc;
+	--ui-tabs-bg-hover-color: #ddd;
+	--ui-tabs-bg-active-color: #eee;
 }
 
 
@@ -17,7 +20,7 @@ html {
 @media (prefers-color-scheme: light) {
 
 	body {
-		background: #fff;
+		background: var(--primary-bg-color);
 	}
 
 }
@@ -28,8 +31,8 @@ body {
 }
 
 .ui-button {
-	background: #34d46a;
-	color: #000;
+	background: var(--ui-button-bg-color);
+	color: var(--primary-text-color);
 	border: none;
 	border-radius: 50px;
 	padding: 8px 15px;
@@ -38,19 +41,19 @@ body {
 }
 
 .ui-button:focus {
-	background: #34d46a;
+	background: var(--ui-button-bg-color);
 	border: none;
 }
 
 .ui-button:hover {
-	background: #8cff6f;
+	background: var(--ui-button-bg-hover-color);
 	border: none;
 	animation-name: ui-button-hover;
 	animation-duration: 0.2s;
 }
 
 .ui-widget button {
-	background: #ccc;
+	background: var(--ui-widget-button-bg-color);
 	color: #333;
 	border: none;
 	padding: 8px 12px;
@@ -60,13 +63,13 @@ body {
 }
 
 .ui-widget button:hover:enabled {
-	background: #ddd;
+	background: var(--ui-widget-button-bg-hover-color);
 	animation-name: widget-hover;
 	animation-duration: 0.2s;
 }
 
 .ui-widget button:active:enabled {
-	background: #ccc;
+	background: var(--ui-widget-button-bg-color);
 }
 
 .ui-widget button:disabled {
@@ -83,7 +86,7 @@ body {
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea {
-	color: #000;
+	color: var(--primary-text-color);
 	border: 1px #aaa solid;
 	border-radius: 15px;
 	padding: 4px 8px;
@@ -91,7 +94,7 @@ body {
 
 .ui-widget input,
 .ui-widget select {
-	background-color: white;
+	background-color: var(--primary-bg-color);
 }
 
 .ui-widget input:disabled,
@@ -136,14 +139,14 @@ body {
 }
 
 .ui-widget-header {
-	background: #fff;
+	background: var(--primary-bg-color);
 	color: #333;
 	border: none;
 }
 
 .ui-widget-content {
 	background: #eee;
-	color: #000;
+	color: var(--primary-text-color);
 	border: none;
 }
 
@@ -208,7 +211,7 @@ body {
 }
 
 #promptAccessCodeCanvas {
-	background: #fff;
+	background: var(--primary-bg-color);
 }
 
 #promptAccessCodeInput {
@@ -227,70 +230,70 @@ body {
 
 @keyframes ui-button-hover {
 	from {
-		background-color: #34d46a;
+		background-color: var(--ui-button-bg-color);
 	}
 
 	to {
-		background-color: #8cff6f;
+		background-color: var(--ui-button-bg-hover-color);
 	}
 }
 
 @keyframes ui-button-unhover {
 	from {
-		background-color: #8cff6f;
+		background-color: var(--ui-button-bg-hover-color);
 	}
 
 	to {
-		background-color: #34d46a;
+		background-color: var(--ui-button-bg-color);
 	}
 }
 
 @keyframes widget-hover {
 	from {
-		background-color: #ccc;
+		background-color: var(--ui-widget-button-bg-color);
 	}
 
 	to {
-		background-color: #ddd;
+		background-color: var(--ui-widget-button-bg-hover-color);
 	}
 }
 
 @keyframes widget-unhover {
 	from {
-		background-color: #ddd;
+		background-color: var(--ui-widget-button-bg-hover-color);
 	}
 
 	to {
-		background-color: #ccc;
+		background-color: var(--ui-widget-button-bg-color);
 	}
 }
 
 @keyframes tab-select {
 	from {
-		background-color: #ccc;
+		background-color: var(--ui-tabs-bg-color);
 	}
 
 	to {
-		background-color: #eee;
+		background-color: var(--ui-tabs-bg-active-color);
 	}
 }
 
 @keyframes tab-hover {
 	from {
-		background-color: #ccc;
+		background-color: var(--ui-tabs-bg-color);
 	}
 
 	to {
-		background-color: #ddd;
+		background-color: var(--ui-tabs-bg-hover-color);
 	}
 }
 
 @keyframes tab-unhover {
 	from {
-		background-color: #ddd;
+		background-color: var(--ui-tabs-bg-hover-color);
 	}
 
 	to {
-		background-color: #ccc;
+		background-color: var(--ui-tabs-bg-color);
 	}
 }

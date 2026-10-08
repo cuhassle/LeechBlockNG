@@ -1,7 +1,19 @@
 /* LeechBlock Spruce theme style */
 
+:root {
+	--primary-bg-color: #031f;
+	--primary-text-color: #adb;
+	--ui-button-bg-color: #253;
+	--ui-button-bg-hover-color: #142;
+	--ui-widget-button-bg-color: #253;
+	--ui-widget-button-bg-hover-color: #142;
+	--ui-tabs-bg-color: #475;
+	--ui-tabs-bg-hover-color: #364;
+	--ui-tabs-bg-active-color: #03e;
+}
+
 body {
-	background: #031;
+	background: var(--primary-bg-color);
 	color: #9ca;
 }
 
@@ -99,7 +111,7 @@ body {
 }
 
 .ui-tabs .ui-state-active {
-	background: #031;
+	background: var(--ui-tabs-bg-active-color);
 	border: 1px solid #840;
 }
 
@@ -111,12 +123,37 @@ body {
 	color: #9ca;
 }
 
+@keyframes ui-button-hover {
+  	from {background-color: var(--ui-button-bg-color);}
+  	to {background-color: var(--ui-button-bg-hover-color);}
+}
+
+@keyframes ui-button-unhover {
+  	from {background-color: var(--ui-button-bg-hover-color);}
+  	to {background-color: var(--ui-button-bg-color);}
+}
+
+@keyframes widget-hover {
+	from {background-color: var(--ui-widget-button-bg-color);}
+	to {background-color: var(--ui-widget-button-bg-hover-color);}
+}
+
+@keyframes widget-unhover {
+	from {background-color: var(--ui-widget-button-bg-hover-color);}
+	to {background-color: var(--ui-widget-button-bg-color);}
+}
+
+@keyframes tab-select {
+   from {background-color: var(--ui-tabs-bg-color);}
+   to {background-color: var(--ui-tabs-bg-active-color);}
+}
+
 @keyframes tab-hover {
-  	from {background-color: #333;}
-  	to {background-color: #777;}
+   from {background-color: var(--ui-tabs-bg-color);}
+   to {background-color: var(--ui-tabs-bg-hover-color);}
 }
 
 @keyframes tab-unhover {
-  	from {background-color: #777;}
-  	to {background-color: #333;}
+   from {background-color: var(--ui-tabs-bg-hover-color);}
+   to {background-color: var(--ui-tabs-bg-color);}
 }
