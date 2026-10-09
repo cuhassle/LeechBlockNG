@@ -9,40 +9,40 @@
 	--ui-widget-button-bg-hover-color: #142;
 	--ui-tabs-bg-color: #475;
 	--ui-tabs-bg-hover-color: #364;
-	--ui-tabs-bg-active-color: #03e;
+	--ui-tabs-bg-active-color: #031;
 }
 
 body {
 	background: var(--primary-bg-color);
-	color: #9ca;
+	color: var(--primary-text-color);
 }
 
 .ui-button {
-	background: #253;
-	color: #adb;
+	background: var(--ui-button-bg-color);
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-button:focus {
-	background: #253;
-	color: #adb;
+	background: var(--ui-button-bg-color);
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-button:hover {
-	background: #142;
-	color: #adb;
+	background: var(--ui-button-bg-hover-color);
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-widget button {
-	background: #253;
-	color: #adb;
+	background: var(--ui-widget-button-bg-color);
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-widget button:hover:enabled {
-	background: #142;
+	background: var(--ui-widget-button-bg-hover-color);
 }
 
 .ui-widget button:active:enabled {
@@ -50,21 +50,21 @@ body {
 }
 
 .ui-widget button:disabled {
-	background: #142;
+	background: var(--ui-widget-button-bg-hover-color);
 	color: #586;
-	border: 1px solid #253;
+	border: 1px solid var(--ui-widget-button-bg-color);
 }
 
 .ui-widget fieldset, .ui-widget input, .ui-widget select, .ui-widget textarea {
 	background: #031;
-	color: #9ca;
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-widget input:disabled, .ui-widget select:disabled, .ui-widget textarea:disabled {
-	background: #142;
+	background: var(--ui-widget-button-bg-hover-color);
 	color: #586;
-	border: 1px solid #253;
+	border: 1px solid var(--ui-widget-button-bg-color);
 }
 
 .ui-widget hr {
@@ -81,14 +81,14 @@ body {
 }
 
 .ui-widget-header {
-	background: #253;
-	color: #adb;
+	background: var(--ui-widget-button-bg-color);
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
 .ui-widget-content {
 	background: #031;
-	color: #8b9;
+	color: var(--primary-text-color);
 	border: 1px solid #840;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .ui-tabs .ui-state-default {
-	background: #475;
+	background: var(--ui-tabs-bg-color);
 	border: 1px solid #840;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 .ui-tabs .ui-state-hover {
-	background: #364;
+	background: var(--ui-tabs-bg-hover-color);
 	border: 1px solid #840;
 }
 
@@ -120,7 +120,7 @@ body {
 }
 
 #paneAbout {
-	color: #9ca;
+	color: var(--primary-text-color);
 }
 
 @keyframes ui-button-hover {
