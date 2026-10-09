@@ -87,13 +87,6 @@ button:active:enabled {
 
 .logo {
 	width:408px;
-	animation: leechblock;
-	animation-duration: 1s;
-}
-
-@keyframes leechblock {
-  	from {width:100%;}
-  	to {width:408px;}
 }
 
 .keyword {

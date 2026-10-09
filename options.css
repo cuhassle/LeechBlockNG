@@ -52,7 +52,8 @@ body {
 	animation-duration: 0.2s;
 }
 
-.ui-widget button {
+.ui-widget button ,
+input[type="file"]::file-selector-button{
 	background: var(--ui-widget-button-bg-color);
 	color: #333;
 	border: none;
@@ -62,7 +63,8 @@ body {
 	animation-duration: 0.2s;
 }
 
-.ui-widget button:hover:enabled {
+.ui-widget button:hover:enabled ,
+input[type="file"]::file-selector-button:hover:enabled{
 	background: var(--ui-widget-button-bg-hover-color);
 	animation-name: widget-hover;
 	animation-duration: 0.2s;
